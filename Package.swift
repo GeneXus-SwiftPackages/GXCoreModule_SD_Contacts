@@ -17,14 +17,14 @@ let package = Package(
 		.target(name: "GXCoreModule_SD_ContactsWrapper",
 				dependencies: [
 					"GXCoreModule_SD_Contacts",
-					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS, .tvOS, .watchOS])),
+					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS, .watchOS, .tvOS])),
 					.product(name: "GXStandardClasses", package: "GXStandardClasses", condition: .when(platforms: [.tvOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_Contacts",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Contacts-1.0.0-beta+20230217195542.xcframework.zip",
-			checksum: "a1115f3f6b8133c137652cd2bdf494cd7d5a66ecb3cb6284a1728f14f78c2205"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Contacts-1.0.0-beta+20230220183523.xcframework.zip",
+			checksum: "ffc1d7e1df706677357cc0acb11d92500022e004dd4d99d767fdc02672886d4d"
 		)
 	]
 )
