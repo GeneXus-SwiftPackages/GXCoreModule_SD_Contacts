@@ -23,8 +23,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_Contacts",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Contacts-1.0.0-beta+20230504210908.xcframework.zip",
-			checksum: "5269d571cc8ddb64ff3ed1244b344132e11742903c69709c311f808825b5ae2b"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Contacts-1.0.0-beta+20230505123704.xcframework.zip",
+			checksum: "5191b6e485b3bfa08e6d5dd0514cdb20d5346aec62a58be39c32b1b5a149535e"
 		)
 	]
 )
