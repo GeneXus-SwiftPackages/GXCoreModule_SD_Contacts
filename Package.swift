@@ -10,21 +10,21 @@ let package = Package(
 			targets: ["GXCoreModule_SD_ContactsWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", d60601ead23ef16bd8e55ba8bcf14734fe357b5e),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXStandardClasses.git", 03415737dfb393b3ba62f37a44bc9eeb851d321d)
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", revision: "02fd74284a30115df5e5c22f8b14f44194752676"),
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXStandardClasses.git", revision: "4ca72491fdc6a8fd7fdab99ed70e324d3a206d3f")
 	],
 	targets: [
 		.target(name: "GXCoreModule_SD_ContactsWrapper",
 				dependencies: [
 					"GXCoreModule_SD_Contacts",
-					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.tvOS, .watchOS, .iOS])),
+					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS, .watchOS, .tvOS])),
 					.product(name: "GXStandardClasses", package: "GXStandardClasses", condition: .when(platforms: [.tvOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_Contacts",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Contacts-1.0.0-beta+20230608211628.xcframework.zip",
-			checksum: "566aa2b168c25a6ce53a967407b6513f4ee766477a4774aaaa3ab5f82de3ad72"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Contacts-1.0.0-beta+20230609175617.xcframework.zip",
+			checksum: "781f29717f6f3a1ac3c3f4a5dc8011be6c559f11fa42c922e16b08b0975bad00"
 		)
 	]
 )
