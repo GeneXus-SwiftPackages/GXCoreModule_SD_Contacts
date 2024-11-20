@@ -10,7 +10,7 @@ let package = Package(
 			targets: ["GXCoreModule_SD_ContactsWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "2.2.0-beta.12")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "2.2.0-beta.13")
 	],
 	targets: [
 		.target(name: "GXCoreModule_SD_ContactsWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXCoreModule_SD_Contacts",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Contacts-2.2.0-beta.12.xcframework.zip",
-			checksum: "47504c1b57a11ed1ec7728c05924cb32f8835709d1744b510ece767bbba95d2e"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXCoreModule_SD_Contacts-2.2.0-beta.13.xcframework.zip",
+			checksum: "c6a600c9f47d524ebdd2b763bd202351cdb91be79c4e1bf2c7ced43c67dbb326"
 		)
 	]
 )
